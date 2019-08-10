@@ -1,13 +1,15 @@
+
 // ==UserScript==
 // @name         ƵŦX Extention
 // @namespace    ƵŦX Extention Agario Mod
-// @version      1.0
+// @version      1.6
 // @description
 // @homepage
 // @author       ZTX Dev Team
 // @license      MIT
-// @icon
+// @icon         https://jimboy3100.github.io/banners/CropedImage128.gif
 // @match        https://agar.io/*
+// @match        https://play.google.com/*
 // @downloadURL
 // @updateURL
 // @run-at       document-start
@@ -15,7 +17,6 @@
 // @connect      saekiamae.github.io
 // ==/UserScript==
 
-// Legend Mod by Jimboy3100
 /*MIT License*/
 
 // Check location
@@ -28,8 +29,8 @@ if (location.host === "agar.io" && location.pathname === "/") {
 var modVersion = GM_info.script.version;
 // Inject Legend
 function inject(page) {
-    var page = page.replace("</body>", "<script>init('" + modVersion + "');</script>" + "</body>");
-    return page;
+    var pagex = page.replace("</body>", "<script>init('" + modVersion + "');</script>" + "</body>");
+    return pagex;
 }
 window.stop();
 document.documentElement.innerHTML = "";
@@ -62,3 +63,4 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
+
