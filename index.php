@@ -1,3 +1,4 @@
+<?php include('phpdef.php'); ?>
 <!DOCTYPE html>
 <html>
  <head>
@@ -6,30 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>ZTX</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:700">
-  <link rel="stylesheet" href="https://saekiamae.github.io/ZTX/master.css">
-  <link rel="stylesheet" href="https://saekiamae.github.io/ZTX/bootstrap-colorpicker.min.css"></link>
-  <link rel="stylesheet" href="https://saekiamae.github.io/ZTX/toastr.min.css"></link>
-  <link rel="stylesheet" href="https://saekiamae.github.io/ZTX/switchery.min.css"></link>
-  <link rel="stylesheet" href="https://saekiamae.github.io/ZTX/rangeslider.css"></link>
-  <link rel="stylesheet" href="https://saekiamae.github.io/ZTX/perfect-scrollbar.min.css"></link>
+  <link rel="stylesheet" href="<?= $srv ?>/master.css">
+  <link rel="stylesheet" href="<?= $srv ?>/bootstrap-colorpicker.min.css"></link>
+  <link rel="stylesheet" href="<?= $srv ?>/toastr.min.css"></link>
+  <link rel="stylesheet" href="<?= $srv ?>/switchery.min.css"></link>
+  <link rel="stylesheet" href="<?= $srv ?>/rangeslider.css"></link>
+  <link rel="stylesheet" href="<?= $srv ?>/perfect-scrollbar.min.css"></link>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-  <link rel="stylesheet" href="https://saekiamae.github.io/ZTX/ogario.v3.css?v=338">
-  <script src="https://saekiamae.github.io/ZTX/jquery.min.js"></script>
-  <script src="https://saekiamae.github.io/ZTX/bootstrap.min.js"></script>
-  <script src="https://saekiamae.github.io/ZTX/bootstrap-colorpicker.min.js"></script>
-  <script src="https://saekiamae.github.io/ZTX/toastr.min.js"></script>
-  <script src="https://saekiamae.github.io/ZTX/switchery.min.js"></script>
-  <script src="https://saekiamae.github.io/ZTX/rangeslider.min.js"></script>
-  <script src="https://saekiamae.github.io/ZTX/perfect-scrollbar.jquery.min.js"></script>
-  <script src="https://saekiamae.github.io/ZTX/Youtubeiframe_api.js"></script>
-  <script src="https://saekiamae.github.io/ZTX/key-event.js"></script>
-  <script src="https://saekiamae.github.io/ZTX/LanguagePackEnglish.js"></script>
-  <script src="https://saekiamae.github.io/ZTX/LMexpress.sniff2.js"></script>
-  <script src="https://saekiamae.github.io/ZTX/i18n.js"></script>
-  <script src="https://saekiamae.github.io/ZTX/ogario/ogario.v4.master.regionobj.js"></script>
-  <script src="https://saekiamae.github.io/ZTX/ogario/ogario.v4.master.js?v=32"></script>
-
-  
+  <link rel="stylesheet" href="<?= $srv ?>/ogario.v3.css?v=338">
+  <?php include('loadAPI.php'); ?>
  </head>
 
 <body> 
@@ -57,7 +43,7 @@ var CutNameConflictwithMessage=false;
    var js, fjs = d.getElementsByTagName(s)[0];
    if (d.getElementById(id)) return;
    js = d.createElement(s); js.id = id;
-   js.src = "//connect.facebook.net/en_US/sdk.js";
+   js.src = "//connect.facebook.net/en_US/sdk.js?ver=<?= getRandomStr() ?>";
    fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
  </script>
@@ -158,15 +144,15 @@ var CutNameConflictwithMessage=false;
   </div>
  </div>
  <canvas id="canvas"></canvas>
- <script src="https://saekiamae.github.io/ZTX/LMexpress.sniff.js"></script>
- <script src="https://saekiamae.github.io/ZTX/ogario/quadtree.js" charset="utf-8"></script>	
- <script src="https://saekiamae.github.io/ZTX/ogario/ogario.v4.js" charset="utf-8"></script>
- <script src="https://saekiamae.github.io/ZTX/ogario/autoplay.js" charset="utf-8"></script>
- <script src="https://saekiamae.github.io/ZTX/ogario/mergetimer.js" charset="utf-8"></script>
- <script src="https://saekiamae.github.io/ZTX/ogario/anti.js" charset="utf-8"></script>	
- <script src="https://saekiamae.github.io/ZTX/ogario/ogario.v4.static.js" charset="utf-8"></script>	
- <script src="https://saekiamae.github.io/ZTX/LMexpress.js"></script>
- <script src="https://saekiamae.github.io/ZTX/LMexpress.sniff3.js"></script>
+ <script src="<?= $srv ?>/LMexpress.sniff.js?ver=<?= getRandomStr() ?>"></script>
+ <script src="<?= $srv ?>/ogario/quadtree.js?ver=<?= getRandomStr() ?>" charset="utf-8"></script>	
+ <script src="<?= $srv ?>/ogario/ogario.v4.js?v=32" charset="utf-8"></script>
+ <script src="<?= $srv ?>/ogario/autoplay.js?ver=<?= getRandomStr() ?>" charset="utf-8"></script>
+ <script src="<?= $srv ?>/ogario/mergetimer.js?ver=<?= getRandomStr() ?>" charset="utf-8"></script>
+ <script src="<?= $srv ?>/ogario/anti.js?ver=<?= getRandomStr() ?>" charset="utf-8"></script>	
+ <script src="<?= $srv ?>/ogario/ogario.v4.static.js?ver=<?= getRandomStr() ?>" charset="utf-8"></script>	
+ <script src="<?= $srv ?>/LMexpress.js?ver=<?= getRandomStr() ?>"></script>
+ <script src="<?= $srv ?>/LMexpress.sniff3.js?ver=<?= getRandomStr() ?>"></script>
  <div style="font-family:'Ubuntu'">&nbsp;</div>
  <div id="captchaWindow" style="display:none; position:absolute; top:0px; left:0px; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); z-index:500">
   <div id="verifyUser" style="position:absolute; top:50%; left:50%; margin-left:-152px; margin-top:-40px;"></div>

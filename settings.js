@@ -1,0 +1,1 @@
+ZTX.ajax.corspath = " ";

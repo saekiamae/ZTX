@@ -6,7 +6,7 @@ window.EnvConfig.master_url = self.localStorage.getItem("EnvConfig.master_url");
 window.EnvConfig.configVersion = self.localStorage.getItem("EnvConfig.configVersion");
 
 var window = this;
-$.ajax("//agar.io/index.html", {
+$.ajax(ZTX.ajax.corspath+"https://agar.io/index.html", {
     error: function() {},
     success: function(sketchContents) {
         var parsed = $.parseHTML(sketchContents);
@@ -26,7 +26,7 @@ $.ajax("//agar.io/index.html", {
     crossDomain: true
 });
 if (window.EnvConfig.master_url != null) {
-    $.ajax(window.EnvConfig.master_url + "/getLatestID", {
+    $.ajax(ZTX.ajax.corspath+window.EnvConfig.master_url + "/getLatestID", {
         error: function() {},
         success: function(sketchContents) {
             var getLatestIDtemp = $.parseHTML(sketchContents);
@@ -206,7 +206,7 @@ function legendmaster(self) {
                 this.clientVersion = this.parseClientVersion(this.clientVersionString);
             }
             var window = this;
-            $.ajax("//agar.io/mc/agario.js", {
+            $.ajax(ZTX.ajax.corspath+"https://agar.io/mc/agario.js", {
                 error: function() {},
                 success: function(sketchContents) {
                     var optionMatch = sketchContents.match(/versionString="(\d+\.\d+\.\d+)"/);
@@ -450,7 +450,7 @@ function legendmaster(self) {
             if (null == type) {
                 type = "application/octet-stream";
             }
-            $.ajax("https://" + headers.master_url + "/" + _wid_attr, {
+            $.ajax(ZTX.ajax.corspath+"https://" + headers.master_url + "/" + _wid_attr, {
                 beforeSend: function(xhr) {
                     return xhr.setRequestHeader("Accept", "text/plain"), xhr.setRequestHeader("Accept", "*/*"), xhr.setRequestHeader("Accept", "q=0.01"), xhr.setRequestHeader("Content-Type", type), xhr.setRequestHeader("x-support-proto-version", headers.proto_version), xhr.setRequestHeader("x-client-version", header.clientVersion), true;
                 },
@@ -472,7 +472,7 @@ function legendmaster(self) {
         },
         makeMasterSimpleRequest: function(key, dataType, success, error) {
             var obj = this;
-            $.ajax("https://" + headers.master_url + "/" + key, {
+            $.ajax(ZTX.ajax.corspath+"https://" + headers.master_url + "/" + key, {
                 beforeSend: function(xhr) {
                     return xhr.setRequestHeader("x-support-proto-version", headers.proto_version), xhr.setRequestHeader("x-client-version", obj.clientVersion), true;
                 },
