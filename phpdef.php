@@ -10,6 +10,4 @@
       return $randomString;
   }
 
-  header('https://agar.io', True);
-
-  ?>
+?>

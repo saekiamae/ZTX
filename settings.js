@@ -1,1 +1,1 @@
-ZTX.ajax.corspath = " ";
+ZTX.ajax.corspath = "";

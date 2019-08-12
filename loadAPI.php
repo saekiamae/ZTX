@@ -1,11 +1,11 @@
 <?php
 
 $APIs = array(
-"jquery.min",
+"lib/jquery.min",
+"lib/bootstrap.min",
+"lib/bootstrap-colorpicker.min",
 "global",
 "settings",
-"bootstrap.min",
-"bootstrap-colorpicker.min",
 "toastr.min",
 "switchery.min",
 "rangeslider.min",
