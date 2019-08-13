@@ -3,14 +3,15 @@
 <html>
  <head>
   <?php
-      include('loadheader.php');
-      include('loadcss.php');
+      include('loadHeader.php');
+      include('loadCss.php');
       include('loadAPI.php');
   ?>
  </head>
  <body>
  <?php
-     include('loadbody.php');
+    include('loadMenu.php');
+    include('loadGame.php');
  ?>
  </body>
 </html>

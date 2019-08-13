@@ -427,6 +427,10 @@ input.hide-url::selection,input.stream-mode::selection{
     height:40px;
     display:block
 }
+#quick-bots a,.quick{
+    height:40px;
+    display:block
+}
 #exp-bar .progress{
     background-color:#002f52;
     border-radius:0;
@@ -448,6 +452,10 @@ input.hide-url::selection,input.stream-mode::selection{
     background-color:#002f52;
     transition:all .2s linear
 }
+#quick-bots a:hover,.quick{
+    background-color:#002f52;
+    transition:all .2s linear
+}
 #exp-bar .progress-bar-text{
     color:#fff;
     font-size:11px;
@@ -462,6 +470,12 @@ input.hide-url::selection,input.stream-mode::selection{
     display:none;
     float:right
 }
+#quick-bots{
+    width:300px;
+	height:500px;
+    display:none;
+    float:right;
+}
 #quick-menu a{
     width:100%;
     color:#fff;
@@ -470,7 +484,18 @@ input.hide-url::selection,input.stream-mode::selection{
     text-decoration:none;
     padding-top:8px
 }
+#quick-bots a{
+    width:100%;
+    color:#fff;
+    font-size:16px;
+    text-align:center;
+    text-decoration:none;
+    padding-top:8px
+}
 #quick-menu a:hover,.quick,.quick:focus{
+    color:#01d9cc
+}
+#quick-bots a:hover,.quick,.quick:focus{
     color:#01d9cc
 }
 .quick{
@@ -492,6 +517,9 @@ input.hide-url::selection,input.stream-mode::selection{
 }
 .quick-menu{
     left:15px
+}
+.quick-bots{
+    left:60px
 }
 .quick-skins{
     right:15px
@@ -1407,3 +1435,69 @@ input.hide-url::selection,input.stream-mode::selection{
 #top5-pos {
 	padding-left: 0!important;
 }
+
+                #bots-menu {
+                    width: 280px !important;
+                    height: 450px !important;
+                }
+                #botsInfo > a, #botsAuthor > a {
+                    color: #3894F8;
+                    text-decoration: none;
+                }
+                #botsAuthor {
+                    margin-top: -15px;
+                }
+                #statusTextBots, #aiTextBots {
+                    font-weight: bold;
+                    position: absolute;
+                    left: -5px;
+                }
+                #userStatus, #botsAI {
+                    color: #DA0A00;
+                }
+                #botsNameLM, #botsAmount {
+                    margin-top: 6px;
+                    width: 144px;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    padding: 8px;
+                    font-size: 14.5px;
+                    outline: none;
+                    margin-left: 60px;
+                }
+                #botsNameLM:focus, #botsAmount:focus {
+                    border-color: #7D7D7D;
+                }
+                #connectBots, #startBots, #stopBots {
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 7px;
+                    width: 160px;
+                    font-size: 14px;
+					font-weight: bold;
+                    outline: none;
+                    margin-top: 6px;
+                    margin-left: 50px;
+                }
+                #connectBots {
+                    display: inline;
+                    background-color: #0074C0;
+                }
+                #startBots {
+                    display: inline;
+                    background-color: #00C02E;
+                }
+                #stopBots {
+                    display: none;
+                    background-color: #DA0A00;
+                }
+                #connectBots:active {
+                    background-color: #004E82;
+                }
+                #startBots:active {
+                    background-color: #009A25;
+                }
+                #stopBots:active {
+                    background-color: #9A1B00;
+                }
