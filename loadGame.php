@@ -1,14 +1,30 @@
  <canvas id="canvas"></canvas>
- <script src="<?= $srv ?>/LMexpress.sniff.js?ver=<?= getRandomStr() ?>"></script>
- <script src="<?= $srv ?>/ogario/quadtree.js?ver=<?= getRandomStr() ?>" charset="utf-8"></script>
-  <script src="<?= $srv ?>/globaltemp.js?ver=<?= getRandomStr() ?>"></script>
- <script src="<?= $srv ?>/ogario.v4.js?ver=<?= getRandomStr() ?>" charset="utf-8"></script>
- <script src="<?= $srv ?>/ogario/autoplay.js?ver=<?= getRandomStr() ?>" charset="utf-8"></script>
- <script src="<?= $srv ?>/ogario/mergetimer.js?ver=<?= getRandomStr() ?>" charset="utf-8"></script>
- <script src="<?= $srv ?>/ogario/anti.js?ver=<?= getRandomStr() ?>" charset="utf-8"></script>
- <script src="<?= $srv ?>/ogario/ogario.v4.static.js?ver=<?= getRandomStr() ?>" charset="utf-8"></script>
- <!-- <script src="<?= $srv ?>/LMexpress.js?ver=<?= getRandomStr() ?>"></script> -->
- <script src="<?= $srv ?>/LMexpress.sniff3.js?ver=<?= getRandomStr() ?>"></script>
+
+ <?php
+
+ $Scripts = array(
+ "LMexpress.sniff",
+ "ogario/quadtree",
+ "lang",
+ "globaltemp",
+ "menu",
+ "net",
+ "agar",
+ "draw",
+ "cell",
+ "ogario.v4",
+ "ogario/autoplay.js",
+ "ogario/mergetimer",
+ "ogario/anti",
+ "ogario/ogario.v4.static",
+ "LMexpress.js",
+ "LMexpress.sniff3");
+
+ foreach($Scripts as $Script){
+      echo '<script src="'.$srv.'/'.$Script.'.js?ver='.getRandomStr().'" charset="utf-8"></script>'."\r\n";
+ }
+ ?>
+
  <div style="font-family:'Ubuntu'">&nbsp;</div>
  <div id="captchaWindow" style="display:none; position:absolute; top:0px; left:0px; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); z-index:500">
   <div id="verifyUser" style="position:absolute; top:50%; left:50%; margin-left:-152px; margin-top:-40px;"></div>

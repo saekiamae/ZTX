@@ -6,6 +6,7 @@
 //team view
 
 //window.testobjects = {};
+ZTX.cl = ZTX.lang[ZTX.sett.cl];
 
 function removeEmojis(string) {
     var regex = /(?:[\u2700-\u27bf]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\u0023-\u0039]\ufe0f?\u20e3|\u3299|\u3297|\u303d|\u3030|\u24c2|\ud83c[\udd70-\udd71]|\ud83c[\udd7e-\udd7f]|\ud83c\udd8e|\ud83c[\udd91-\udd9a]|\ud83c[\udde6-\uddff]|\ud83c[\ude01-\ude02]|\ud83c\ude1a|\ud83c\ude2f|\ud83c[\ude32-\ude3a]|\ud83c[\ude50-\ude51]|\u203c|\u2049|[\u25aa-\u25ab]|\u25b6|\u25c0|[\u25fb-\u25fe]|\u00a9|\u00ae|\u2122|\u2139|\ud83c\udc04|[\u2600-\u26FF]|\u2b05|\u2b06|\u2b07|\u2b1b|\u2b1c|\u2b50|\u2b55|\u231a|\u231b|\u2328|\u23cf|[\u23e9-\u23f3]|[\u23f8-\u23fa]|\ud83c\udccf|\u2934|\u2935|[\u2190-\u21ff])/g;
@@ -464,778 +465,7 @@ var emoticonicons = {
     '(wow)': 'newwow.svg'
 }
 
-var languagetexts = {
-    'pl': {
-        'start': 'Start',
-        'settings': 'Ustawienia',
-        'restoreSettings': 'Przywróc ustawienia domyślne',
-        'animationGroup': 'Animacja',
-        'zoomGroup': 'Zoom',
-        'respGroup': 'Odrodzenie',
-        'namesGroup': 'Nazwy',
-        'massGroup': 'Masa',
-        'skinsGroup': 'Skiny',
-        'foodGroup': 'Pokarm',
-        'transparencyGroup': 'Przezroczystość / kolory',
-        'gridGroup': 'Siatka / sektory',
-        'miniMapGroup': 'Minimapa',
-        'helpersGroup': 'Wspomagacze',
-        'mouseGroup': 'Sterowanie myszką',
-        'hudGroup': 'HUD',
-        'chatGroup': 'Czat',
-        'statsGroup': 'Statystyki',
-        'extrasGroup': 'Dodatkowe',
-        'noSkins': 'Wyłącz skiny',
-        'noNames': 'Wyłącz nazwy',
-        'noColors': 'Wyłącz kolory',
-        'showMass': 'Pokaż masę',
-        'skipStats': 'Pomiń statystyki po śmierci',
-        'showQuest': 'Pokaż zadanie (quest)',
-        'autoZoom': 'Auto zoom',
-        'animation': 'Opóźnienie animacji',
-        'suckAnimation': 'Cell Eat [Sucking] Animation',
-        'virusGlow': 'Virus Glow',
-        'borderGlow': 'Border Glow',
-        'zoomSpeedValue2': 'Szybkość zoomu',
-        'quickResp': 'Szybkie odrodzenie (klawisz)',
-        'autoResp': 'Auto odrodzenie',
-        'autoHideCellsInfo': 'Autoukrywanie nazw i masy',
-        'autoHideNames': 'Autoukrywanie nazw',
-        'autoHideMass': 'Autoukrywanie masy',
-        'autoHideFood': 'Autoukrywanie pokarmu - masa',
-        'autoHideFoodOnZoom': 'Autoukrywanie pokarmu - zoom',
-        'optimizedNames': 'Zoptymalizowane nazwy',
-        'hideMyName': 'Ukryj własną nazwę',
-        'hideTeammatesNames': 'Ukryj nazwy graczy teamu',
-        'optimizedMass': 'Optimized mass (+/-2%) & Merge timer BETA off\n Suggested to be enabled for Lag reduce',
-        'shortMass': 'Skrócona masa (k)',
-        'virMassShots': 'Licznik strzałów (wirusy)',
-        'hideMyMass': 'Ukryj własną masę',
-        'hideEnemiesMass': 'Ukryj masę przeciwników',
-        'vanillaSkins': 'Podstawowe skiny',
-        'customSkins': 'Własne skiny',
-        'videoSkins': 'Video skins (.mp4 .webm .ogv)',
-        'videoSkinsMusic': 'Sound from other\'s Video skins when both C3',
-        'myTransparentSkin': 'Mój przezroczysty skin',
-        'myCustomColor': 'Mój własny kolor',
-        'transparentCells': 'Przezroczyste kulki',
-        'transparentViruses': 'Przezroczyste wirusy',
-        'transparentSkins': 'Przezroczyste skiny',
-        'showGrid': 'Siatka',
-        'showBgSectors': 'Sektory w tle',
-        'showMapBorders': 'Granice mapy',
-        'showGhostCells': 'Duchy kulek (fps drop)',
-        'showGhostCellsInfo': 'Ghost cells info (confusing)',
-        'showMiniMap': 'Pokaż minimapę',
-        'showMiniMapGrid': 'Pokaż siatkę minimapy',
-        'showMiniMapGuides': 'Pokaż prowadnice na minimapie',
-        'showExtraMiniMapGuides': 'Show extra minimap guides',
-        'showMiniMapGhostCells': 'Pokaż duchy kulek na minimapie',
-        'oneColoredTeammates': 'Jednokolorowi gracze',
-        'optimizedFood': 'Zoptymalizowany pokarm',
-        'rainbowFood': 'Kolorowy pokarm',
-        'oppColors': 'Kolory przeciwników',
-        'oppRings': 'Ringi przeciwników',
-        'virColors': 'Kolory wirusów',
-        'splitRange': 'Zasięg podziału',
-        'virusesRange': 'Zasięg wirusów',
-        'textStroke': 'Obwódki nazw i masy',
-        'namesStroke': 'Obwódki nazw',
-        'massStroke': 'Obwódki masy',
-        'cursorTracking': 'Śledzenie kursora',
-        'teammatesInd': 'Wskaźniki graczy teamu',
-        'mouseSplit': 'LPM - Split myszką',
-        'mouseFeed': 'PPM - Feed myszką',
-        'mouseInvert': 'Odwróć klawisze myszki',
-        'disableChat': 'Wyłącz czat',
-        'hideChat': 'Ukryj czat',
-        'chatSounds': 'Powiadomienia dźwiękowe',
-        'chatEmoticons': 'Emotikony',
-        'showChatImages': 'Pokaż obrazki na czacie',
-        'showChatVideos': 'Pokaż filmiki na czacie',
-        'showChatBox': 'Czatbox zamiast wyskakujących wiadomości',
-        'messageSound': 'Dźwięk powiadomienia o wiadomości',
-        'commandSound': 'Dźwięk powiadomienia o komendzie',
-        'virusSoundurl': 'Virus shot sound',
-        'virusSound': 'Virus shot sound',
-        'jellyPhisycs': 'Jelly physics',
-        'showTop5': 'Pokaż top 5 teamu',
-        'showTargeting': 'Pokaż namierzanie',
-        'showTime': 'Pokaż aktualny czas',
-        'showLbData': 'Pokaż masę w topce',
-        'normalLb': 'Nagłówek \"Topka\"',
-        'centeredLb': 'Wyśrodkowana topka',
-        'fpsAtTop': 'Statystyki na górze',
-        'showStats': 'Pokaż statystyki',
-        'showStatsMass': 'Statystyki: Masa',
-        'showStatsSTE': 'Statystyki: Przedziały Masy',
-        'showStatsESTE': 'Statystyki: STE wroga',
-        'showStatsEMTE': 'Statystyki: MTE wroga',
-        'showStatsMTE': 'Statystyki: Nasze MTE',
-        'showStatsSTE': 'Statystyki: Nasze STE',
-        'showStatsTTE': 'Statystyki: Minimalna masa mate\'a do tricksplitu',
-        'showStatsPTE': 'Statystyki: Maksymalna masa wroga do presplitu',
-        'showStatsN16': 'Statystyki: n/16',
-        'showStatsFPS': 'Statystyki: FPS',
-        'blockPopups': 'Blokuj popupy (reklamy/sklep/zadanie)',
-        'hotkeys': 'Skróty klawiszowe',
-        'hk-inst-assign': 'Aby ustawić skrót klawiszowy kliknij na polu skrótu i naciśnij wybrany klawisz.',
-        'hk-inst-delete': 'Aby usunąć skrót klawiszowy kliknij na polu skrótu i naciśnij klawisz DELETE.',
-        'hk-inst-keys': 'Możliwe kombinacje skrótów klawiszowych z użyciem klawiszy CTRL oraz ALT.',
-        'hk-bots-split': 'Bots split',
-        'hk-bots-feed': 'Bots feed',
-        'hk-bots-ai': 'Bots AI toggle',
-        'hk-feed': 'Feed',
-        'hk-macroFeed': 'Szybki feed',
-        'hk-split': 'Podział',
-        'hk-doubleSplit': 'Podwójny podział',
-        'hk-split16': 'Podział na 16',
-        'hk-pause': 'Pauza kulki',
-        'hk-showTop5': 'Pokaż/ukryj top 5 teamu',
-        'hk-showTime': 'Pokaż/ukryj aktualny czas',
-        'hk-showSplitRange': 'Pokaż/ukryj zasięg podziału',
-        'hk-showSplitInd': 'Pokaż/ukryj zasięg podziału z ringami',
-        'hk-showTeammatesInd': 'Pokaż/ukryj wskaźniki graczy teamu',
-        'hk-showOppColors': 'Pokaż/ukryj kolory przeciwników',
-        'hk-toggleSkins': 'Przełącz skiny (własne/standardowe)',
-        'hk-showSkins': 'Pokaż/ukryj skiny',
-        'hk-transparentSkins': 'Włącz/wyłącz przezroczyste skiny',
-        'hk-showStats': 'Pokaż/ukryj statystyki gry',
-        'hk-toggleCells': 'Przełącz kulkę (najmniejsza/największa)',
-        'hk-showFood': 'Pokaż/ukryj pokarm',
-        'hk-showGrid': 'Pokaż/ukryj siatkę',
-        'hk-showMiniMapGuides': 'Pokaż/ukryj prowadnice na minimapie',
-        'hk-hideChat': 'Pokaż/ukryj czat',
-        'hk-showHUD': 'Pokaż/ukryj HUD',
-        'hk-copyLb': 'Kopiuj topkę',
-        'hk-showLb': 'Pokaż/ukryj topkę',
-        'hk-toggleAutoZoom': 'Włącz/wyłącz auto zoom',
-        'hk-resetZoom': 'Reset zoomu',
-        'hk-zoomLevel': 'Zoom - poziom',
-        'hk-toggleDeath': 'Przełącz miejsce śmierci',
-        'hk-clearChat': 'Pokaż historię czatu / Czyść czat',
-        'hk-showBgSectors': 'Pokaż/ukryj sektory w tle',
-        'hk-hideBots': 'Pokaż/ukryj małe boty',
-        'hk-showNames': 'Pokaż/ukryj nazwy',
-        'hk-hideTeammatesNames': 'Pokaż/ukryj nazwy graczy teamu',
-        'hk-showMass': 'Pokaż/ukryj masę',
-        'hk-showMiniMap': 'Pokaż/ukryj minimapę',
-        'hk-chatMessage': 'Napisz wiadomość na czacie',
-        'hk-quickResp': 'Szybkie odrodzenie (respawn)',
-        'hk-autoResp': 'Włącz/wyłacz auto odrodzenie',
-        'hk-switchServerMode': 'Przełącz serwer [publiczny/prywatny]',
-        'hk-showTargeting': 'Pokaż/ukryj panel namierzania',
-        'hk-voiceChat': 'Głos do tekstu',
-        'hk-GhostCellsInfo': 'Show ghost cells information',
-        'hk-Autoplay': 'Auto Play',
-        'hk-setTargeting': 'Włącz/wyłącz namierzanie (śledzenie)',
-        'hk-cancelTargeting': 'Zatrzymaj namierzanie',
-        'hk-changeTarget': 'Zmień cel',
-        'hk-privateMiniMap': 'Pokaż cel na minimapie',
-        'hk-showQuest': 'Pokaż/ukryj zadanie',
-        'commands': 'Komendy',
-        'comm1': 'Feeduj!',
-        'comm2': 'Dziel się!',
-        'comm3': 'Pomocy na %currentSector%!',
-        'comm4': 'Wróg na %currentSector%!',
-        'comm5': 'Zabij pomocnika!',
-        'comm6': 'Strzel z wirusa!',
-        'comm7': 'Zjedz wirusa!',
-        'comm8': 'Zjebałem, wybacz.',
-        'comm9': 'Ja pierdolę...',
-        'comm0': 'Kurwa mać!',
-        'comm10': 'Trick!',
-        'comm11': 'Lewo!',
-        'comm12': 'Góra!',
-        'comm13': 'Prawo!',
-        'comm14': 'Dół!',
-        'comm15': 'Fake Tricksplit',
-        'comm16': 'Popsplit',
-        'comm17': 'Double Popsplit',
-        'comm18': 'Reversed Tricksplit',
-        'comm19': 'Canonsplit',
-        'comm20': 'Reversed Canonsplit',
-        'comm21': 'Bowlingsplit',
-        'comm22': 'Auto feed trick',
-        'comm23': 'Pause',
-        'comm24': 'ANTI alarm stage 1',
-        'comm25': 'ANTI alarm stage 2',
-        'comm26': 'ANTI alarm stage 3',
-        'comm27': 'ANTI alarm stage 4',
-        'comm28': 'ANTI alarm stage 5',
-        'comm29': 'Presplit',
-        'comm30': 'Party Run tricks',
-        'saveComm': 'Zapisz komendy',
-        'theme': 'Wygląd',
-        'restoreThemeSettings': 'Przywróc ustawienia domyślne wyglądu',
-        'basicTheming': 'Podstawowy',
-        'themePreset': 'Motyw',
-        'themeType': 'Typ motywu',
-        'darkTheme': 'Ciemny motyw',
-        'lightTheme': 'Jasny motyw',
-        'mainColor': 'Kolor główny',
-        'bgColor': 'Tło',
-        'bordersColor': 'Granice mapy',
-        'gridColor': 'Siatka',
-        'sectorsColor': 'Czcionka sektorów',
-        'namesColor': 'Nazwy',
-        'namesStrokeColor': 'Obwódki nazw',
-        'massColor': 'Masa',
-        'massStrokeColor': 'Obwódki masy',
-        'virusColor': 'Wirusy',
-        'virusStrokeColor': 'Obwódki wirusów',
-        'virusGlowColor': "Virus Glow",
-        "borderGlowColor": "Border Glow",
-        'mVirusColor': 'Mothercell',
-        'mVirusStrokeColor': 'Mothercell stroke',
-        'virusGlowSize': 'Virus Glow Size',
-        'borderGlowSize': 'Border Glow Size',
-        'foodColor': 'Pokarm',
-        'namesFont': 'Czcionka nazw',
-        'massFont': 'Czcionka masy',
-        'sectorsFont': 'Czcionka sektorów',
-        'namesScale': 'Skala nazw',
-        'massScale': 'Skala masy',
-        'virMassScale': 'Skala masy wirusów',
-        'strokeScale': 'Skala obwódek tekstu',
-        'foodSize': 'Wielkość pokarmu',
-        'bordersWidth': 'Grubość granic mapy',
-        'sectorsWidth': 'Grubość siatki sektorów',
-        'sectorsFontSize': 'Rozmiar czcionki sektorów',
-        'cellsAlpha': 'Przezroczystość kulek',
-        'skinsAlpha': 'Przezroczystość skinów',
-        'virusAlpha': 'Przezroczystość wirusów',
-        'textAlpha': 'Przezroczystość nazw i masy',
-        'virusStrokeSize': 'Grubość obwódki wirusów',
-        "virusGlowSize": "Virus Glow Size",
-        'teammatesIndColor': 'Wskaźnik gracza',
-        'cursorTrackingColor': 'Śledzenie kursora',
-        'splitRangeColor': 'Zasięg podziału',
-        'qdsplitRange': 'Zasięg szybkiego podwójnego podziału', //Sonia2
-        'sdsplitRange': 'Zasięg powolnego podwójnego podziału', //Sonia2
-        'enemyBSTEDColor': 'Kolor W2STE wroga', //Sonia2
-        'enemyBSTEColor': 'Kolor WSTE wroga', //Sonia2
-        'enemyBColor': 'Kolor większego wroga', //Sonia2
-        'enemySColor': 'Kolor mniejszego wroga', //Sonia2
-        'enemySSTEColor': 'Kolor MSTE wroga', //Sonia2
-        'enemySSTEDColor': 'Kolor M2STE wroga', //Sonia2
-        'safeAreaColor': 'Bezpieczna strefa',
-        'dangerAreaColor': 'Strefa zagrożenia',
-        'ghostCellsColor': 'Duchy kulek',
-        'ghostCellsAlpha': 'Przezroczystość duchów kulek',
-        'menuTheming': 'Menu',
-        'menuPreset': 'Motyw menu',
-        'menuMainColor': 'Kolor główny',
-        'menuBtnTextColor': 'Tekst przycisku',
-        'menuPanelColor': 'Panel',
-        'menuPanelColor2': 'Panel (2)',
-        'menuTextColor': 'Tekst panelu',
-        'menuTextColor2': 'Tekst panelu (2)',
-        'btn1Color': 'Przycisk #1',
-        'btn1Color2': 'Przycisk #1 (2)',
-        'btn2Color': 'Przycisk #2',
-        'btn2Color2': 'Przycisk #2 (2)',
-        'btn3Color': 'Przycisk #3',
-        'btn3Color2': 'Przycisk #3 (2)',
-        'btn4Color': 'Przycisk #4',
-        'btn4Color2': 'Przycisk #4 (2)',
-        'menuBg': 'Grafika tła panelu',
-        'menuOpacity': 'Przezroczystość',
-        'hudTheming': 'HUD',
-        'hudMainColor': 'Kolor główny',
-        'hudColor': 'Tło',
-        'hudTextColor': 'Tekst',
-        'statsHudColor': 'Statystyki',
-        'timeHudColor': 'Czas',
-        'top5MassColor': 'Masa',
-        'lbMeColor': 'Topka - ja',
-        'lbTeammateColor': 'Topka - team',
-        'hudFont': 'Czcionka HUD',
-        'hudScale': 'Skala HUD',
-        'chatTheming': 'Czat',
-        'messageColor': 'Tło wiadomości',
-        'messageTextColor': 'Tekst wiadomości',
-        'messageTimeColor': 'Czas wiadomości',
-        'messageNickColor': 'Nick wiadomości',
-        'commandsColor': 'Tło komendy',
-        'commandsTextColor': 'Tekst komendy',
-        'commandsTimeColor': 'Czas komendy',
-        'commandsNickColor': 'Nick komendy',
-        'chatBoxColor': 'Tło czatboxu',
-        'chatScale': 'Skala czatu',
-        'miniMapTheming': 'Minimapa',
-        'miniMapSectorsColor': 'Sektory',
-        'miniMapSectorColor': 'Aktualny sektor',
-        'miniMapGuidesColor': 'Prowadnice',
-        'miniMapNickColor': 'Nick',
-        'miniMapNickStrokeColor': 'Obwódka nicku',
-        'miniMapMyCellColor': 'Moja kulka',
-        'miniMapMyCellStrokeColor': 'Obwódka mojej kulki',
-        'miniMapTeammatesColor': 'Gracze',
-        'miniMapDeathLocationColor': 'Miejsce śmierci',
-        'miniMapFont': 'Czcionka minimapy',
-        'miniMapNickFont': 'Czcionka nicku',
-        'miniMapWidth': 'Szerokość minimapy',
-        'miniMapSectorsOpacity': 'Przezroczystość sektorów',
-        'miniMapNickSize': 'Rozmiar nicku',
-        'miniMapNickStrokeSize': 'Grubość obwódki nicku',
-        'miniMapMyCellSize': 'Wielkość mojej kulki',
-        'miniMapMyCellStrokeSize': 'Grubość obwódki mojej kulki',
-        'miniMapTeammatesSize': 'Wielkość graczy',
-        'miniMapGhostCellsColor': 'Duchy kulek',
-        'miniMapGhostCellsAlpha': 'Przezroczystość duchów kulek',
-        'imagesTheming': 'Grafika / kursory',
-        'customBackground': 'Grafika tła',
-        'customCursor': 'Grafika kursora',
-        'hideChatMsgA': 'Czat został włączony!',
-        'hideChatMsgB': 'Czat został ukryty!',
-        'showSkinsMsgA': 'Skiny zostały włączone!',
-        'showSkinsMsgB': 'Skiny zostały ukryte!',
-        'hideSmallBotsMsgA': 'Małe boty stały się widoczne!',
-        'hideSmallBotsMsgB': 'Małe boty zostały ukryte!',
-        'autoRespMsgA': 'Auto odrodzenie zostało włączone!',
-        'autoRespMsgB': 'Auto odrodzenie zostało wyłączone!',
-        'autoZoomMsgA': 'Auto zoom został włączony!',
-        'autoZoomMsgB': 'Auto zoom został wyłączony!',
-        //                   'targetNotSet': 'Brak celu',
-        'targetNotSet': '',
-        'targetDead': 'Nie żyje',
-        'targetDistance': 'Dystans',
-        'targetMass': 'Masa razem',
-        'totalPartyPlayers': '',
-        'totalPartyMass': '',
-        'exportImport': 'Eksport / import ustawień',
-        'exportSettings': 'Eksportuj ustawienia',
-        'exportInfo': 'Aby wyeksportować wybrane ustawienia skopiuj poniższy kod i zapisz go w pliku tekstowym z kodowaniem Unicode.',
-        'importSettings': 'Importuj ustawienia',
-        'importInfo': 'Aby zaimportować wybrane ustawienia wklej poniżej wyeksportowany wcześniej kod i naciśnij przycisk \"Importuj ustawienia\".',
-        'profile': 'Profil',
-        'profiles': 'Profile',
-        'skins': 'Skiny',
-        'moreSkins': 'Dodaj skiny',
-        'thanks': 'Dzięki Awesome!',
-        'saveSett': 'Zapisz ustawienia',
-        'saved': 'Zapisano!',
-        'resetSett': 'Resetuj ustawienia',
-        'close': 'Zamknij',
-        'enterChatMsg': 'Napisz wiadomość',
-        'activeParties': 'Aktywne party',
-        'noActiveParties': 'Brak aktywnych party ;(',
-        'playlist': 'Playlista',
-        'pause': 'PAUZA!',
-        'visit': 'Odwiedź',
-        'exit': 'Legend mod Express: Czy na pewno chcesz opuścic grę?',
-        'blockWarn': 'UWAGA! Popupy zostały zablokowane w ustawieniach.',
-        'unblockPopups': 'Odblokuj tymczasowo',
-        'mass': 'Masa',
-        'score': 'Top',
-        'leaderboard': 'Topka',
-        'user': 'Użytkownik',
-        'userMuted': 'Użytkownik %user% został wyciszony.',
-        'userUnmuted': 'Wyłączono wyciszenie użytkownika %user%.',
-        'mute': 'Wycisz',
-        'unmute': 'Wyłącz wyciszenie',
-        'mutedUsers': 'Wyciszeni użytkownicy',
-        'activeUsers': 'Aktywni użytkownicy',
-        'showActiveUsers': 'Pokaż aktywnych użytkowników',
-        'none': 'Brak',
-        'sounds': 'Dźwięki',
-        'page_back_button': 'Wróć',
-        'page_create_party': 'Stwórz party',
-        'page_join_party': 'Dołącz',
-        'page_login_and_play': 'Zaloguj',
-        'page_logout': 'Wyloguj',
-        'page_menu_login_facebook': 'Zaloguj z Facebook',
-        'page_menu_login_google': 'Zaloguj z Google',
-        'page_menu_main_free_coins': 'Darmowe Monety',
-        'page_menu_main_gifts': 'Prezenty',
-        'page_menu_main_dailyquests': 'Zadania',
-        'page_party_join_error': 'Nie można dołączyć do tego party. Upewnij się, że token jest prawidłowy lub stwórz nowy.',
-        'page_play': 'Graj',
-        'page_play_as_guest': 'Graj jako gość',
-        'page_shop': 'Sklep',
-        'page_spectate': 'Obserwuj',
-        'page_stats': 'Statystyki'
-    },
-    'en': {
-        'start': 'Home',
-        'settings': 'Settings',
-        'restoreSettings': 'Restore default settings',
-        'animationGroup': 'Animation',
-        'zoomGroup': 'Zoom',
-        'respGroup': 'Respawn',
-        'namesGroup': 'Names',
-        'massGroup': 'Mass',
-        'skinsGroup': 'Skins',
-        'foodGroup': 'Food',
-        'transparencyGroup': 'Transparency / colors',
-        'gridGroup': 'Grid / sectors',
-        'miniMapGroup': 'Minimap',
-        'helpersGroup': 'Helpers',
-        'mouseGroup': 'Mouse control',
-        'hudGroup': 'HUD',
-        'chatGroup': 'Chat',
-        'statsGroup': 'Stats',
-        'extrasGroup': 'Extras',
-        'noSkins': 'No skins',
-        'noNames': 'No names',
-        'noColors': 'No colors',
-        'showMass': 'Show mass',
-        'skipStats': 'Skip stats after death',
-        'showQuest': 'Show quest',
-        'autoZoom': 'Auto zoom',
-        'animation': 'Animation delay',
-        'suckAnimation': 'Cell Eat [Sucking] Animation',
-        'virusGlow': 'Virus Glow',
-        'borderGlow': 'Border Glow',
-        'zoomSpeedValue2': 'Zoom speed',
-        'quickResp': 'Quick respawn (hotkey)',
-        'autoResp': 'Auto respawn',
-        'autoHideCellsInfo': 'Auto hide names and mass',
-        'autoHideNames': 'Auto hide names',
-        'autoHideMass': 'Auto hide mass',
-        'autoHideFood': 'Auto hide food - mass',
-        'autoHideFoodOnZoom': 'Auto hide food - zoom',
-        'optimizedNames': 'Optimized names',
-        'hideMyName': 'Hide my name',
-        'hideTeammatesNames': 'Hide teammates names',
-        'optimizedMass': 'Optimized mass (+/-2%) & Merge timer BETA off\r\n Suggested to be enabled for Lag reduce',
-        'shortMass': 'Short mass (k)',
-        'virMassShots': 'Virus shots',
-        'hideMyMass': 'Hide my mass',
-        'hideEnemiesMass': 'Hide enemies mass',
-        'vanillaSkins': 'Vanilla skins',
-        'customSkins': 'Custom skins',
-        'videoSkins': 'Video skins (.mp4 .webm .ogv)',
-        'videoSkinsMusic': 'Sound from other\'s Video skins when both C3',
-        'myTransparentSkin': 'My transparent skin',
-        'myCustomColor': 'My custom color',
-        'transparentCells': 'Transparent cells',
-        'transparentViruses': 'Transparent viruses',
-        'transparentSkins': 'Transparent skins',
-        'showGrid': 'Show grid',
-        'showBgSectors': 'Show background sectors',
-        'showMapBorders': 'Show map borders',
-        'showGhostCells': 'Ghost cells (fps drop)',
-        'showGhostCellsInfo': 'Ghost cells info (confusing)',
-        'showMiniMap': 'Show minimap',
-        'showMiniMapGrid': 'Show minimap grid',
-        'showMiniMapGuides': 'Show minimap guides',
-        'showExtraMiniMapGuides': 'Show extra minimap guides',
-        'showMiniMapGhostCells': 'Show ghost cells',
-        'oneColoredTeammates': 'One-colored teammates',
-        'optimizedFood': 'Optimized food',
-        'rainbowFood': 'Rainbow food',
-        'oppColors': 'Opponents colors',
-        'oppRings': 'Opponents rings',
-        'virColors': 'Viruses colors',
-        'splitRange': 'Split range',
-        'qdsplitRange': 'Quick double split range', //Sonia2
-        'sdsplitRange': 'Slow double split range', //Sonia2
-        'virusesRange': 'Viruses range',
-        'textStroke': 'Names and mass stroke',
-        'namesStroke': 'Names stroke',
-        'massStroke': 'Mass stroke',
-        'cursorTracking': 'Cursor tracking',
-        'teammatesInd': 'Teammates indicators',
-        'mouseSplit': 'LMB - Mouse split',
-        'mouseFeed': 'RMB - Mouse feed',
-        'mouseInvert': 'Invert mouse buttons',
-        'disableChat': 'Disable chat',
-        'hideChat': 'Hide chat',
-        'chatSounds': 'Sound notifications',
-        'chatEmoticons': 'Emoticons',
-        'showChatImages': 'Show images on chat',
-        'showChatVideos': 'Show videos on chat',
-        'showChatBox': 'Chatbox instead of popups',
-        'messageSound': 'Message notification sound',
-        'commandSound': 'Command notification sound',
-        'virusSoundurl': 'Virus shot sound',
-        'virusSound': 'Virus shot sound',
-        'jellyPhisycs': 'Jelly physics',
-        'showTop5': 'Show teamboard',
-        'showTargeting': 'Show targeting',
-        'showTime': 'Show current time',
-        'showLbData': 'Show leaderboard mass',
-        'normalLb': '\"Leaderboard\" header',
-        'centeredLb': 'Centered leaderboard',
-        'fpsAtTop': 'Game stats at the top',
-        'showStats': 'Show game stats',
-        'showStatsMass': 'Game stats: Mass',
-        'showStatsESTE': 'Game stats: Enemy\'s STE',
-        'showStatsEMTE': 'Game stats: Enemy\'s MTE',
-        'showStatsMTE': 'Game stats: Our MTE',
-        'showStatsSTE': 'Game stats: Our STE',
-        'showStatsTTE': 'Game stats: Minimal tricksplit teammate\'s mass',
-        'showStatsPTE': 'Game stats: Maximal enemy\'s mass for presplit',
-        'showStatsN16': 'Game stats: n/16',
-        'showStatsFPS': 'Game stats: FPS',
-        'blockPopups': 'Block popups (ads/shop/quest)',
-        'hotkeys': 'Hotkeys',
-        'hk-inst-assign': 'To assign a hotkey click on the input field and press your chosen key.',
-        'hk-inst-delete': 'To delete a hotkey click on the input field and press the DELETE key.',
-        'hk-inst-keys': 'Possible key combinations with the CTRL and ALT keys.',
-        'hk-bots-split': 'Bots split',
-        'hk-bots-feed': 'Bots feed',
-        'hk-bots-ai': 'Bots AI toggle',
-        'hk-feed': 'Feed',
-        'hk-macroFeed': 'Macro feed',
-        'hk-split': 'Split',
-        'hk-doubleSplit': 'Double split',
-        'hk-split16': 'Split 16',
-        'hk-pause': 'Cell pause',
-        'hk-showTop5': 'Show/hide teamboard',
-        'hk-showTime': 'Show/hide current time',
-        'hk-showSplitRange': 'Show/hide split range',
-        'hk-showSplitInd': 'Show/hide split indicators',
-        'hk-showTeammatesInd': 'Show/hide teammates indicators',
-        'hk-showOppColors': 'Show/hide opponents colors',
-        'hk-toggleSkins': 'Toggle skins (custom/default)',
-        'hk-showSkins': 'Show/hide skins',
-        'hk-transparentSkins': 'Toggle transparent skins',
-        'hk-showStats': 'Show/hide game stats',
-        'hk-toggleCells': 'Toggle own cells (smallest/biggest)',
-        'hk-showFood': 'Show/hide food',
-        'hk-showGrid': 'Show/hide grid',
-        'hk-showMiniMapGuides': 'Show/hide minimap guides',
-        'hk-hideChat': 'Show/hide chat',
-        'hk-showHUD': 'Show/hide HUD',
-        'hk-copyLb': 'Copy leaderboard',
-        'hk-showLb': 'Show/hide leaderboard',
-        'hk-toggleAutoZoom': 'Toggle auto zoom',
-        'hk-resetZoom': 'Reset zoom',
-        'hk-zoomLevel': 'Zoom level',
-        'hk-toggleDeath': 'Toggle death location',
-        'hk-clearChat': 'Show chat history / Clear chat',
-        'hk-showBgSectors': 'Show/hide background sectors',
-        'hk-hideBots': 'Show/hide small bots',
-        'hk-showNames': 'Show/hide names',
-        'hk-hideTeammatesNames': 'Show/hide teammates names',
-        'hk-showMass': 'Show/hide mass',
-        'hk-showMiniMap': 'Show/hide minimap',
-        'hk-chatMessage': 'Enter chat message',
-        'hk-quickResp': 'Quick respawn',
-        'hk-autoResp': 'Toggle auto respawn',
-        'hk-switchServerMode': 'Switch server [public/private]',
-        'hk-showTargeting': 'Show/hide targeting panel',
-        'hk-voiceChat': 'Voice to text',
-        'hk-GhostCellsInfo': ' Show ghost cells information',
-        'hk-Autoplay': 'Auto Play',
-        'hk-setTargeting': 'Start/stop targeting (following)',
-        'hk-cancelTargeting': 'Cancel targeting',
-        'hk-changeTarget': 'Change target',
-        'hk-privateMiniMap': 'Show target on the minimap',
-        'hk-showQuest': 'Show/hide quest',
-        'commands': 'Commands',
-        'comm1': 'Feed me!',
-        'comm2': 'Split into me!',
-        'comm3': 'Need backup at %currentSector%!',
-        'comm4': 'Enemy spotted at %currentSector%!',
-        'comm5': 'Need a teammate!',
-        'comm6': 'Tank the virus!',
-        'comm7': 'Eat the virus!',
-        'comm8': 'Let\'s bait!',
-        'comm9': 'Fake tricksplit!',
-        'comm0': 'Fuck!',
-        'comm10': 'Tricksplit!',
-        'comm11': 'Left!',
-        'comm12': 'Up!',
-        'comm13': 'Right!',
-        'comm14': 'Bottom!',
-        'comm15': 'Fake Tricksplit',
-        'comm16': 'Popsplit',
-        'comm17': 'Double Popsplit',
-        'comm18': 'Reversed Tricksplit',
-        'comm19': 'Canonsplit',
-        'comm20': 'Reversed Canonsplit',
-        'comm21': 'Bowlingsplit',
-        'comm22': 'Auto feed trick',
-        'comm23': 'Pause',
-        'comm24': 'ANTI alarm stage 1',
-        'comm25': 'ANTI alarm stage 2',
-        'comm26': 'ANTI alarm stage 3',
-        'comm27': 'ANTI alarm stage 4',
-        'comm28': 'ANTI alarm stage 5',
-        'comm29': 'Presplit',
-        'comm30': 'Party Run tricks',
-        'saveComm': 'Save commands',
-        'theme': 'Theme',
-        'restoreThemeSettings': 'Restore theme default settings',
-        'basicTheming': 'Basic theming',
-        'themePreset': 'Theme preset',
-        'themeType': 'Theme type',
-        'darkTheme': 'Dark theme',
-        'lightTheme': 'Light theme',
-        'mainColor': 'Main color',
-        'bgColor': 'Background',
-        'bordersColor': 'Map borders',
-        'gridColor': 'Grid',
-        'sectorsColor': 'Sectors font',
-        'namesColor': 'Names',
-        'namesStrokeColor': 'Names stroke',
-        'massColor': 'Mass',
-        'massStrokeColor': 'Mass stroke',
-        'virusColor': 'Virus',
-        'virusStrokeColor': 'Virus stroke',
-        'virusGlowColor': "Virus Glow",
-        "borderGlowColor": "Border Glow",
-        'mVirusColor': 'Mothercell',
-        'mVirusStrokeColor': 'Mothercell stroke',
-        'virusGlowSize': 'Virus Glow Size',
-        'borderGlowSize': 'Border Glow Size',
-        'foodColor': 'Food',
-        'namesFont': 'Names font',
-        'massFont': 'Mass font',
-        'sectorsFont': 'Sectors font',
-        'namesScale': 'Names scale',
-        'massScale': 'Mass scale',
-        'virMassScale': 'Virus mass scale',
-        'strokeScale': 'Text stroke scale',
-        'foodSize': 'Food size',
-        'bordersWidth': 'Map borders width',
-        'sectorsWidth': 'Sectors grid width',
-        'sectorsFontSize': 'Sectors font size',
-        'cellsAlpha': 'Cells transparency',
-        'skinsAlpha': 'Skins transparency',
-        'virusAlpha': 'Virus transparency',
-        'textAlpha': 'Names & mass transparency',
-        'virusStrokeSize': 'Virus stroke size',
-        "virusGlowSize": "Virus Glow Size",
-        'teammatesIndColor': 'Teammate indicator',
-        'cursorTrackingColor': 'Cursor tracking',
-        'splitRangeColor': 'Split range',
-        'enemyBSTEDColor': 'B2STE Enemy Color', //Sonia2
-        'enemyBSTEColor': 'BSTE Enemy Color', //Sonia2
-        'enemyBColor': 'Bigger Enemy Color', //Sonia2
-        'enemySColor': 'Smaller Enemy Color', //Sonia2
-        'enemySSTEColor': 'SSTE Enemy Color', //Sonia2
-        'enemySSTEDColor': 'S2STE Enemy Color', //Sonia2
-        'safeAreaColor': 'Safe area',
-        'dangerAreaColor': 'Danger area',
-        'ghostCellsColor': 'Ghost cells',
-        'ghostCellsAlpha': 'Ghost cells transparency',
-        'menuTheming': 'Menu',
-        'menuPreset': 'Menu theme',
-        'menuMainColor': 'Main color',
-        'menuBtnTextColor': 'Button text',
-        'menuPanelColor': 'Panel',
-        'menuPanelColor2': 'Panel (2)',
-        'menuTextColor': 'Panel text',
-        'menuTextColor2': 'Panel text (2)',
-        'btn1Color': 'Button #1',
-        'btn1Color2': 'Button #1 (2)',
-        'btn2Color': 'Button #2',
-        'btn2Color2': 'Button #2 (2)',
-        'btn3Color': 'Button #3',
-        'btn3Color2': 'Button #3 (2)',
-        'btn4Color': 'Button #4',
-        'btn4Color2': 'Button #4 (2)',
-        'menuBg': 'Panel background image',
-        'menuOpacity': 'Transparency',
-        'hudTheming': 'HUD',
-        'hudMainColor': 'Main color',
-        'hudColor': 'Background',
-        'hudTextColor': 'Text',
-        'statsHudColor': 'Stats',
-        'timeHudColor': 'Time',
-        'top5MassColor': 'Mass',
-        'lbMeColor': 'Leaderboard - me',
-        'lbTeammateColor': 'Leaderboard - teammate',
-        'hudFont': 'HUD font',
-        'hudScale': 'HUD scale',
-        'chatTheming': 'Chat',
-        'messageColor': 'Message background',
-        'messageTextColor': 'Message text',
-        'messageTimeColor': 'Message time',
-        'messageNickColor': 'Message nick',
-        'commandsColor': 'Command background',
-        'commandsTextColor': 'Command text',
-        'commandsTimeColor': 'Command time',
-        'commandsNickColor': 'Command nick',
-        'chatBoxColor': 'Chatbox color',
-        'chatScale': 'Chat scale',
-        'miniMapTheming': 'Minimap',
-        'miniMapSectorsColor': 'Sectors',
-        'miniMapSectorColor': 'Current sector',
-        'miniMapGuidesColor': 'Guides',
-        'miniMapNickColor': 'Nick',
-        'miniMapNickStrokeColor': 'Nick stroke',
-        'miniMapMyCellColor': 'My cell',
-        'miniMapMyCellStrokeColor': 'My cell stroke',
-        'miniMapTeammatesColor': 'Teammates',
-        'miniMapDeathLocationColor': 'Death location',
-        'miniMapFont': 'Minimap font',
-        'miniMapNickFont': 'Nick font',
-        'miniMapWidth': 'Minimap width',
-        'miniMapSectorsOpacity': 'Sectors transparency',
-        'miniMapNickSize': 'Nick size',
-        'miniMapNickStrokeSize': 'Nick stroke size',
-        'miniMapMyCellSize': 'My cell size',
-        'miniMapMyCellStrokeSize': 'My cell stroke size',
-        'miniMapTeammatesSize': 'Teammates size',
-        'miniMapGhostCellsColor': 'Ghost cells',
-        'miniMapGhostCellsAlpha': 'Ghost cells transparency',
-        'imagesTheming': 'Graphics / cursors',
-        'customBackground': 'Custom background image',
-        'customCursor': 'Custom cursor image',
-        'hideChatMsgA': 'Chat is visible!',
-        'hideChatMsgB': 'Chat is hidden!',
-        'showSkinsMsgA': 'Skins are visible!',
-        'showSkinsMsgB': 'Skins are hidden!',
-        'hideSmallBotsMsgA': 'Small bots are visible!',
-        'hideSmallBotsMsgB': 'Small bots are hidden!',
-        'autoRespMsgA': 'Auto respawn is on!',
-        'autoRespMsgB': 'Auto respawn is off!',
-        'autoZoomMsgA': 'Auto zoom is on!',
-        'autoZoomMsgB': 'Auto zoom is off!',
-        'targetNotSet': '',
-        'targetDead': 'Dead',
-        'targetDistance': 'Distance',
-        'targetMass': 'Total Mass',
-        'totalPartyPlayers': '',
-        'totalPartyMass': '',
-        'exportImport': 'Export / import settings',
-        'exportSettings': 'Export settings',
-        'exportInfo': 'To export selected settings copy the code below and save it to a text file encoded in Unicode.',
-        'importSettings': 'Import settings',
-        'importInfo': 'To import selected settings paste an exported code below and press the \"Import settings\" button.',
-        'profile': 'Profile',
-        'profiles': 'Profiles',
-        'skins': 'Skins',
-        'moreSkins': 'Add skins',
-        'thanks': 'Thanks to Awesome!',
-        'saveSett': 'Save settings',
-        'saved': 'Saved!',
-        'resetSett': 'Reset to default',
-        'close': 'Close',
-        'enterChatMsg': 'Enter chat message',
-        'activeParties': 'Active parties',
-        'noActiveParties': 'No active parties ;(',
-        'playlist': 'Playlist',
-        'pause': 'PAUSE!',
-        'visit': 'Visit',
-        'exit': 'Legend mod Express: Are you sure you want to quit the game?',
-        'blockWarn': 'WARNING! Popups are blocked in the settings.',
-        'unblockPopups': 'Temporary unblock',
-        'mass': 'Mass',
-        'score': 'Score',
-        'leaderboard': 'Leaderboard',
-        'user': 'User',
-        'userMuted': 'User %user% has been muted.',
-        'userUnmuted': 'User %user% has been unmuted.',
-        'mute': 'Mute',
-        'unmute': 'Unmute',
-        'mutedUsers': 'Muted users',
-        'activeUsers': 'Active users',
-        'showActiveUsers': 'Show active users',
-        'none': 'None',
-        'sounds': 'Sounds',
-        'page_menu_main_free_coins': 'Free Coins',
-        'page_menu_main_gifts': 'Gifts',
-        'page_menu_main_dailyquests': 'Daily Quest',
-        'page_shop': 'Shop'
-    }
-}
+
 var themePresets = {
     'ogario-v3': {
         'name': 'OGARio v3',
@@ -1810,18 +1040,18 @@ var skinUrlPatterns = [{
     example: "https://i.imgur.com/xdmUp5N.png",
     pattern: "https?://w+.imgur.com/w{6,}.(?:%file_ext%)??d*"
 },
-    {
-        name: "put.re",
+{
+    name: "put.re",
         url: "https://put.re/",
-        example: "https://s.put.re/iYHAW65g.png",
-        pattern: "https?://w+.put.re/w{8,}.(?:%file_ext%)"
-    },
-    {
-        name: "postimages.org",
+    example: "https://s.put.re/iYHAW65g.png",
+    pattern: "https?://w+.put.re/w{8,}.(?:%file_ext%)"
+},
+{
+    name: "postimages.org",
         url: "https://postimages.org/",
-        example: "https://i.postimg.cc/zzK0sRPg/xdmUp5N.png",
-        pattern: "https?://w+.postimg.cc/w{8,}/w+.(?:%file_ext%)"
-    }
+    example: "https://i.postimg.cc/zzK0sRPg/xdmUp5N.png",
+    pattern: "https?://w+.postimg.cc/w{8,}/w+.(?:%file_ext%)"
+}
 ];
 var defaultmapsettings = {
     'isAlphaChanged': false,
@@ -1973,3 +1203,1108 @@ function setGUIEvents() {
         if (window.userBots.startedBots) window.connectionBots.send(new Uint8Array([1]).buffer)
     })
 }
+
+ZTX.render=function() {
+    this.txt = '',
+        this.txtCanvas = null,
+        this.txtCtx = null,
+        this.color = '#FFFFFF',
+        this.stroke = false,
+        this.strokeWidth = 2,
+        this.strokeColor = '#000000',
+        this.font = '700 16px Ubuntu',
+        this.fontFamily = 'Ubuntu',
+        this.fontWeight = 700,
+        this.fontSize = 16,
+        this.margin = 3,
+        this.scale = 1,
+        this.quality = 1,
+        this.measuredWidth = 0,
+        this.redraw = false,
+        this.remeasure = false,
+        this.setTxt = function (ogariosettxtsetter) {
+            this.txt !== ogariosettxtsetter && (this.txt = ogariosettxtsetter,
+                this.redraw = true,
+                this.remeasure = true);
+        },
+        this.setColor = function (ogariocolorsetter) {
+            this.color !== ogariocolorsetter && (this.color = ogariocolorsetter,
+                this.redraw = true);
+        },
+        this.setStroke = function (ogariostrokesetter) {
+            this.stroke !== ogariostrokesetter && (this.stroke = ogariostrokesetter,
+                this.redraw = true);
+        },
+        this.setStrokeWidth = function (ogariostrokewidthsetter) {
+            this.stroke && this.strokeWidth != ogariostrokewidthsetter && (this.strokeWidth = ogariostrokewidthsetter,
+                this.redraw = true,
+                this.remeasure = true);
+        },
+        this.setStrokeColor = function (ogariostrokecolorsetter) {
+            this.stroke && this.strokeColor !== ogariostrokecolorsetter && (this.strokeColor = ogariostrokecolorsetter,
+                this.redraw = true);
+        },
+        this.setFont = function () {
+            this.font = this.fontWeight + ' ' + this.fontSize + 'px ' + this.fontFamily;
+        },
+        this.setFontFamily = function (ogariofontfamilysetter) {
+            this.fontFamily !== ogariofontfamilysetter && (this.fontFamily = ogariofontfamilysetter,
+                this.setFont(),
+                this.redraw = true,
+                this.remeasure = true);
+        },
+        this.setFontWeight = function (ogariofontweightsetter) {
+            this.fontWeight != ogariofontweightsetter && (this.fontWeight = ogariofontweightsetter,
+                this.setFont(),
+                this.redraw = true,
+                this.remeasure = true);
+        },
+        this.setFontSize = function (ogariofontsizesetter) {
+            this.fontSize != ogariofontsizesetter && (this.fontSize = ogariofontsizesetter,
+                this.margin = ~~(0.2 * ogariofontsizesetter),
+                this.setFont(),
+                this.redraw = true);
+        },
+        this.setScale = function (ogarioscalesetter) {
+            this.scale != ogarioscalesetter && (this.scale = ogarioscalesetter,
+                this.redraw = true);
+        },
+        this.createCanvas = function () {
+            this.txtCanvas || (this.txtCanvas = document.createElement('canvas'),
+                this.txtCtx = this.txtCanvas.getContext('2d'),
+                this.txtCtx.ogarioCtx = true);
+        },
+        this.setDrawing = function (ogarsetDrawinglabel1, ogarsetDrawinglabel2, ogarsetDrawinglabel3, ogarsetDrawinglabel4, ogarsetDrawinglabel5, ogarsetDrawinglabel6) {
+            this.setColor(ogarsetDrawinglabel1);
+            this.setFontFamily(ogarsetDrawinglabel2);
+            this.setFontWeight(ogarsetDrawinglabel3);
+            this.setStroke(ogarsetDrawinglabel4);
+            this.setStrokeWidth(ogarsetDrawinglabel5);
+            this.setStrokeColor(ogarsetDrawinglabel6);
+        },
+        this.measureWidth = function () {
+            return this.remeasure && (this.txtCtx.font = this.fontWeight + ' 10px ' + this.fontFamily,
+                this.measuredWidth = this.txtCtx.measureText(this.txt).width,
+                this.remeasure = false),
+            ~~(this.fontSize / 10 * this.measuredWidth) + 2 * this.strokeWidth;
+        },
+        //
+        this.measureWidthCustom = function (customTxt) {
+            return customTxt && this.remeasure && (this.txtCtx.font = this.fontWeight + ' 10px ' + this.fontFamily,
+                this.measuredWidth = this.txtCtx.measureText(customTxt).width,
+                this.remeasure = false),
+            ~~(this.fontSize / 10 * this.measuredWidth) + 2 * this.strokeWidth;
+        },
+        //
+        this.drawTxt = function (customTxt) {
+            return this.createCanvas(),
+            this.redraw && (this.redraw = false,
+
+
+                this.txtCanvas.width = this.measureWidthCustom(customTxt),
+                this.txtCanvas.width = this.measureWidth(),
+                this.txtCanvas.height = this.fontSize + this.margin * 2,
+                this.txtCtx.font = this.font,
+                this.txtCtx.globalAlpha = 1,
+                this.txtCtx.lineWidth = this.strokeWidth,
+                this.txtCtx.strokeStyle = this.strokeColor,
+                this.txtCtx.fillStyle = this.color,
+            customTxt && this.stroke && this.txtCtx.strokeText(customTxt, this.strokeWidth, ~~(this.fontSize - this.margin * 0.5)),
+            !customTxt && this.stroke && this.txtCtx.strokeText(this.txt, this.strokeWidth, ~~(this.fontSize + this.margin * 0.5)),
+            customTxt && this.txtCtx.fillText(customTxt, this.strokeWidth, ~~(this.fontSize - this.margin * 0.5)),
+            !customTxt && this.txtCtx.fillText(this.txt, this.strokeWidth, ~~(this.fontSize + this.margin * 0.5))),
+                this.txtCanvas;
+        };
+
+}
+
+c = {
+    'comm0': ZTX.cl.comm0,
+    'comm1': ZTX.cl.comm1,
+    'comm2': ZTX.cl.comm2,
+    'comm3': ZTX.cl.comm3,
+    'comm4': ZTX.cl.comm4,
+    'comm5': ZTX.cl.comm5,
+    'comm6': ZTX.cl.comm6,
+    'comm7': ZTX.cl.comm7,
+    'comm8': ZTX.cl.comm8,
+    'comm9': ZTX.cl.comm9,
+    'comm10': ZTX.cl.comm10,
+    'comm11': ZTX.cl.comm11,
+    'comm12': ZTX.cl.comm12,
+    'comm13': ZTX.cl.comm13,
+    'comm14': ZTX.cl.comm14,
+    'comm15': ZTX.cl.comm15,
+    'comm16': ZTX.cl.comm16,
+    'comm17': ZTX.cl.comm17,
+    'comm18': ZTX.cl.comm18,
+    'comm19': ZTX.cl.comm19,
+    'comm20': ZTX.cl.comm20,
+    'comm21': ZTX.cl.comm21,
+    'comm22': ZTX.cl.comm22,
+    'comm23': ZTX.cl.comm23,
+    'comm24': ZTX.cl.comm24,
+    'comm25': ZTX.cl.comm25,
+    'comm26': ZTX.cl.comm26,
+    'comm27': ZTX.cl.comm27,
+    'comm28': ZTX.cl.comm28,
+    'comm29': ZTX.cl.comm29,
+    'comm30': ZTX.cl.comm30
+}
+
+var
+    ogarioefaultHotkeys = {},
+    ogario1Hotkeys = {},
+    ogario11Hotkeys = {
+        'hk-feed': {
+            'label': ZTX.cl['hk-feed'],
+            'defaultKey': 'W',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.feed();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-macroFeed': {
+            'label': ZTX.cl['hk-macroFeed'],
+            'defaultKey': 'E',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.macroFeed(!0);
+            },
+            'keyUp': function () {
+                ZTX.ogario && ZTX.ogario.macroFeed(!1);
+            },
+            'type': 'normal'
+        },
+        'hk-split': {
+            'label': ZTX.cl['hk-split'],
+            'defaultKey': 'SPACE',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.split();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-doubleSplit': {
+            'label': ZTX.cl['hk-doubleSplit'],
+            'defaultKey': 'Q',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.doubleSplit();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-popSplit': {
+            'label': 'Popsplit',
+            'defaultKey': 'ALT+Q',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.popSplit();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-split16': {
+            'label': ZTX.cl['hk-split16'],
+            'defaultKey': 'SHIFT',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.split16();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-pause': {
+            'label': ZTX.cl['hk-pause'],
+            'defaultKey': 'R',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setPause();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showTop5': {
+            'label': ZTX.cl['hk-showTop5'],
+            'defaultKey': 'T',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowTop5();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showTime': {
+            'label': ZTX.cl['hk-showTime'],
+            'defaultKey': 'ALT+T',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowTime();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showSplitRange': {
+            'label': ZTX.cl['hk-showSplitRange'],
+            'defaultKey': 'U',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowSplitRange();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showSplitInd': {
+            'label': ZTX.cl['hk-showSplitInd'],
+            'defaultKey': 'I',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowSplitInd();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showTeammatesInd': {
+            'label': ZTX.cl['hk-showTeammatesInd'],
+            'defaultKey': 'ALT+I',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowTeammatesInd();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showOppColors': {
+            'label': ZTX.cl['hk-showOppColors'],
+            'defaultKey': 'O',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowOppColors();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-toggleSkins': {
+            'label': ZTX.cl['hk-toggleSkins'],
+            'defaultKey': 'A',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.toggleSkins();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-transparentSkins': {
+            'label': ZTX.cl['hk-transparentSkins'],
+            'defaultKey': '',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setTransparentSkins();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showSkins': {
+            'label': ZTX.cl['hk-showSkins'],
+            'defaultKey': 'S',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowSkins();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showStats': {
+            'label': ZTX.cl['hk-showStats'],
+            'defaultKey': 'ALT+S',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowStats();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-toggleCells': {
+            'label': ZTX.cl['hk-toggleCells'],
+            'defaultKey': 'D',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.toggleCells();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showFood': {
+            'label': ZTX.cl['hk-showFood'],
+            'defaultKey': 'F',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowFood();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showGrid': {
+            'label': ZTX.cl['hk-showGrid'],
+            'defaultKey': 'G',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowGrid();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showMiniMapGuides': {
+            'label': ZTX.cl['hk-showMiniMapGuides'],
+            'defaultKey': 'ALT+G',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowMiniMapGuides();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-hideChat': {
+            'label': ZTX.cl['hk-hideChat'],
+            'defaultKey': 'H',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.hideChat();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showHUD': {
+            'label': ZTX.cl['hk-showHUD'],
+            'defaultKey': 'ALT+H',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowHUD();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-copyLb': {
+            'label': ZTX.cl['hk-copyLb'],
+            'defaultKey': 'L',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.copyLb();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showLb': {
+            'label': ZTX.cl['hk-showLb'],
+            'defaultKey': 'ALT+L',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowLb();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-toggleAutoZoom': {
+            'label': ZTX.cl['hk-toggleAutoZoom'],
+            'defaultKey': '',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.toggleAutoZoom();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-resetZoom': {
+            'label': ZTX.cl['hk-resetZoom'],
+            'defaultKey': 'Z',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.resetZoom(!0);
+            },
+            'keyUp': function () {
+                ZTX.ogario && ZTX.ogario.resetZoom(!1);
+            },
+            'type': 'normal'
+        },
+        'hk-toggleDeath': {
+            'label': ZTX.cl['hk-toggleDeath'],
+            'defaultKey': 'X',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.toggleDeath();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-clearChat': {
+            'label': ZTX.cl['hk-clearChat'],
+            'defaultKey': 'C',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.displayChatHistory(!0);
+            },
+            'keyUp': function () {
+                ZTX.ogario && ZTX.ogario.displayChatHistory(!1);
+            },
+            'type': 'normal'
+        },
+        'hk-showBgSectors': {
+            'label': ZTX.cl['hk-showBgSectors'],
+            'defaultKey': 'B',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowBgSectors();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-hideBots': {
+            'label': ZTX.cl['hk-hideBots'],
+            'defaultKey': 'ALT+B',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setHideSmallBots();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showNames': {
+            'label': ZTX.cl['hk-showNames'],
+            'defaultKey': 'N',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowNames();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-hideTeammatesNames': {
+            'label': ZTX.cl['hk-hideTeammatesNames'],
+            'defaultKey': '',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setHideTeammatesNames();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showMass': {
+            'label': ZTX.cl['hk-showMass'],
+            'defaultKey': 'LM',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowMass();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showMiniMap': {
+            'label': ZTX.cl['hk-showMiniMap'],
+            'defaultKey': 'ALT+LM',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowMiniMap();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-chatMessage': {
+            'label': ZTX.cl['hk-chatMessage'],
+            'defaultKey': 'ENTER',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.enterChatMessage();
+            },
+            'keyUp': null,
+            'type': 'special'
+        },
+        'hk-quickResp': {
+            'label': ZTX.cl['hk-quickResp'],
+            'defaultKey': 'TILDE',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.quickResp();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-autoResp': {
+            'label': ZTX.cl['hk-autoResp'],
+            'defaultKey': '',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.toggleAutoResp();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-zoom1': {
+            'label': ZTX.cl['hk-zoomLevel'] + ' 1',
+            'defaultKey': 'ALT+1',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setZoom(0.5);
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-zoom2': {
+            'label': ZTX.cl['hk-zoomLevel'] + ' 2',
+            'defaultKey': 'ALT+2',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setZoom(0.25);
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-zoom3': {
+            'label': ZTX.cl['hk-zoomLevel'] + ' 3',
+            'defaultKey': 'ALT+3',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setZoom(0.125);
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-zoom4': {
+            'label': ZTX.cl['hk-zoomLevel'] + ' 4',
+            'defaultKey': 'ALT+4',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setZoom(0.075);
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-zoom5': {
+            'label': ZTX.cl['hk-zoomLevel'] + ' 5',
+            'defaultKey': 'ALT+5',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setZoom(0.05);
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-voiceChat': {
+            'label': ZTX.cl['hk-voiceChat'],
+            'defaultKey': '=',
+            'keyDown': function () {
+                //ZTX.ogario && ZTX.ogario.enterChatMessage();
+                //if ($('#message-box').css('display') == 'block') {
+                $(".voice-start.icon-mic").click();
+                //}
+            },
+            'keyUp': null,
+            'type': 'special'
+        },
+        'hk-GhostCellsInfo': {
+            'label': ZTX.cl['hk-GhostCellsInfo'],
+            'defaultKey': 'K',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowGhostCellsInfo();
+            },
+            'keyUp': null,
+            'type': 'special'
+        },
+        'hk-Autoplay': {
+            'label': ZTX.cl['hk-Autoplay'],
+            'defaultKey': 'J',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setAutoPlay();
+            },
+            'keyUp': null,
+            'type': 'special'
+        },
+        'hk-switchServerMode': {
+            'label': ZTX.cl['hk-switchServerMode'],
+            'defaultKey': '-',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.switchServerMode();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showTargeting': {
+            'label': ZTX.cl['hk-showTargeting'],
+            'defaultKey': '',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowTargeting();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-setTargeting': {
+            'label': ZTX.cl['hk-setTargeting'],
+            'defaultKey': '',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setTargeting();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-cancelTargeting': {
+            'label': ZTX.cl['hk-cancelTargeting'],
+            'defaultKey': '',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.cancelTargeting();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-changeTarget': {
+            'label': ZTX.cl['hk-changeTarget'],
+            'defaultKey': '',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.changeTarget();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-privateMiniMap': {
+            'label': ZTX.cl['hk-privateMiniMap'],
+            'defaultKey': '',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setPrivateMiniMap();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-showQuest': {
+            'label': ZTX.cl['hk-showQuest'],
+            'defaultKey': '',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.setShowQuest();
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-bots-split': {
+            'label': ZTX.cl['hk-bots-split'],
+            'defaultKey': ',',
+            'keyDown': function () {
+                if (window.userBots.startedBots && window.userBots.isAlive) window.connectionBots.send(new Uint8Array([2]).buffer);
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-bots-feed': {
+            'label': ZTX.cl['hk-bots-feed'],
+            'defaultKey': '.',
+            'keyDown': function () {
+                if (window.userBots.startedBots && window.userBots.isAlive) window.connectionBots.send(new Uint8Array([3]).buffer)
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-bots-ai': {
+            'label': ZTX.cl['hk-bots-ai'],
+            'defaultKey': '/',
+            'keyDown': function () {
+                if (window.userBots.startedBots && window.userBots.isAlive) {
+                    if (!window.bots.ai) {
+                        document.getElementById('botsAI').style.color = '#00C02E'
+                        document.getElementById('botsAI').innerText = 'Enabled'
+                        window.bots.ai = true
+                        window.connectionBots.send(new Uint8Array([4, Number(window.bots.ai)]).buffer)
+                    } else {
+                        document.getElementById('botsAI').style.color = '#DA0A00'
+                        document.getElementById('botsAI').innerText = 'Disabled'
+                        window.bots.ai = false
+                        window.connectionBots.send(new Uint8Array([4, Number(window.bots.ai)]).buffer)
+                    }
+                }
+            },
+            'keyUp': null,
+            'type': 'normal'
+        },
+        'hk-comm1': {
+            'label': c['comm1'],
+            'defaultKey': '1',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(1);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm2': {
+            'label': c['comm2'],
+            'defaultKey': '2',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(2);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm3': {
+            'label': c['comm3'],
+            'defaultKey': '3',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(3);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm4': {
+            'label': c['comm4'],
+            'defaultKey': '4',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(4);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm5': {
+            'label': c['comm5'],
+            'defaultKey': '5',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(5);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm6': {
+            'label': c['comm6'],
+            'defaultKey': '6',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(6);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm7': {
+            'label': c['comm7'],
+            'defaultKey': '7',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(7);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm8': {
+            'label': c['comm8'],
+            'defaultKey': '8',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(8);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm9': {
+            'label': c['comm9'],
+            'defaultKey': '9',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(9);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm0': {
+            'label': c['comm0'],
+            'defaultKey': '0',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(0);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm10': {
+            'label': c['comm10'],
+            'defaultKey': 'MOUSE WHEEL',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(10);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm11': {
+            'label': c['comm11'],
+            'defaultKey': 'LEFT',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(11);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm12': {
+            'label': c['comm12'],
+            'defaultKey': 'UP',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(12);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm13': {
+            'label': c['comm13'],
+            'defaultKey': 'RIGHT',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(13);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm14': {
+            'label': c['comm14'],
+            'defaultKey': 'DOWN',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(14);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm15': {
+            'label': c['comm15'],
+            'defaultKey': 'CTRL+1',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(15);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm16': {
+            'label': c['comm16'],
+            'defaultKey': 'CTRL+2',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(16);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm17': {
+            'label': c['comm17'],
+            'defaultKey': 'CTRL+3',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(17);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm18': {
+            'label': c['comm18'],
+            'defaultKey': 'CTRL+4',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(18);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm19': {
+            'label': c['comm19'],
+            'defaultKey': 'CTRL+5',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(19);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm20': {
+            'label': c['comm20'],
+            'defaultKey': 'CTRL+7',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(20);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm21': {
+            'label': c['comm21'],
+            'defaultKey': 'CTRL+8',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(21);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm22': {
+            'label': c['comm22'],
+            'defaultKey': 'CTRL+9',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(22);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm23': {
+            'label': c['comm23'],
+            'defaultKey': 'CTRL+0',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(23);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm24': {
+            'label': c['comm24'],
+            'defaultKey': 'CTRL+Z',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(24);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm25': {
+            'label': c['comm25'],
+            'defaultKey': 'CTRL+X',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(25);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm26': {
+            'label': c['comm26'],
+            'defaultKey': 'CTRL+Q',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(26);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm27': {
+            'label': c['comm27'],
+            'defaultKey': 'CTRL+LM',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(27);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm28': {
+            'label': c['comm28'],
+            'defaultKey': 'CTRL+B',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(28);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm29': {
+            'label': c['comm29'],
+            'defaultKey': 'CTRL+L',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(29);
+            },
+            'keyUp': null,
+            'type': 'command'
+        },
+        'hk-comm30': {
+            'label': c['comm30'],
+            'defaultKey': 'CTRL+D',
+            'keyDown': function () {
+                ZTX.ogario && ZTX.ogario.sendCommand(30);
+            },
+            'keyUp': null,
+            'type': 'command'
+        }
+    },
+    lastkeys = {
+        'lastPressedKey': '',
+        'lastKeyId': '',
+        'defaultMessageKey': 'ENTER',
+        'inputClassName': 'custom-key-in form-control input-sm',
+        'loadDefaultHotkeys': function () {
+            for (var t in ogario1Hotkeys = {}, ogario11Hotkeys) ogario11Hotkeys.hasOwnProperty(t) && (ogario1Hotkeys[ogario11Hotkeys[t].defaultKey] = t);
+            ogario1Hotkeys['spec-messageKey'] = this.defaultMessageKey;
+        },
+        'loadHotkeys': function () {
+            null !== window.localStorage.getItem('ogarioHotkeys') ? ogario1Hotkeys = JSON.parse(window.localStorage.getItem('ogarioHotkeys')) : this.loadDefaultHotkeys(), null !== window.localStorage.getItem('ogarioCommands') && (c = JSON.parse(window.localStorage.getItem('ogarioCommands')));
+        },
+        'saveHotkeys': function () {
+            window.localStorage.setItem('ogarioHotkeys', JSON.stringify(ogario1Hotkeys)), this.saveCommands();
+        },
+        'saveCommands': function () {
+            $('#hotkeys .command-in').each(function () {
+                var t = $(this),
+                    e = t.attr('id');
+                c.hasOwnProperty(e) && (c[e] = t.val());
+            }), window.localStorage.setItem('ogarioCommands', JSON.stringify(c));
+        },
+        'resetHotkeys': function () {
+            this.loadDefaultHotkeys(), $('#hotkeys-cfg .custom-key-in').each(function () {
+                var t = $(this).attr('id');
+                ogario11Hotkeys[t] && $(this).val(ogario11Hotkeys[t].defaultKey);
+            });
+        },
+        'setHotkeysMenu': function () {
+            var t = this;
+            for (var e in $('body').append('<div id=\"hotkeys\"><div id=\"hotkeys-menu\"><button id=\"reset-hotkeys\" class=\"btn btn-primary\">' + ZTX.cl.restoreSettings + '</button> <button id=\"save-hotkeys\" class=\"btn btn-success\">' + ZTX.cl.saveSett + '</button> <button id=\"close-hotkeys\" class=\"btn btn-danger\">' + ZTX.cl['close'] + '</button></div><div id=\"hotkeys-cfg\"></div><div id=\"hotkeys-inst\"><ul><li>' + ZTX.cl['hk-inst-assign'] + '</li><li>' + ZTX.cl['hk-inst-delete'] + '</li><li>' + ZTX.cl['hk-inst-keys'] + '</li></ul></div></div>'), ogario11Hotkeys)
+                if (ogario11Hotkeys.hasOwnProperty(e)) {
+                    var i = ogario11Hotkeys[e],
+                        o = '';
+                    for (var a in ogario1Hotkeys)
+                        if (ogario1Hotkeys.hasOwnProperty(a) && ogario1Hotkeys[a] === e) {
+                            o = a;
+                            break;
+                        }
+                    if ('hk-switchServerMode' === e && ZTX.ogario && !ZTX.ogario.privateIP) continue;
+                    if ('command' === i.type) {
+                        var n = e.replace('hk-', '');
+                        $('#hotkeys-cfg').append('<div class=\"row\"><div class=\"key-label\"><input id=\"' + n + '\" class=\"command-in form-control input-sm\" value=\"' + c[n] + '\" maxlength=\"80\" /></div><div class=\"default-key\">' + i.defaultKey + '</div><div class=\"custom-key\"><input id=\"' + e + '\" class=\"custom-key-in form-control input-sm\" value=\"' + o + '\" /></div></div>');
+                    } else $('#hotkeys-cfg').append('<div class=\"row\"><div class=\"key-label\">' + i.label + '</div><div class=\"default-key\">' + i.defaultKey + '</div><div class=\"custom-key\"><input id=\"' + e + '\" class=\"custom-key-in form-control input-sm\" value=\"' + o + '\" /></div></div>');
+                }
+            $(document).on('click', '#reset-hotkeys', function (t) {
+                t.preventDefault();
+                lastkeys.resetHotkeys();
+            }),
+                $(document).on('click', '#save-hotkeys', function (t) {
+                    t.preventDefault();
+                    lastkeys.saveHotkeys();
+                    $('#hotkeys').fadeOut(500);
+                }),
+                $(document).on('click', '#close-hotkeys', function (t) {
+                    t.preventDefault();
+                    $('#hotkeys').fadeOut(500);
+                }),
+                $(document).on('click', '.hotkeys-link', function (t) {
+                    $('#hotkeys').fadeIn(500);
+                    $('#hotkeys-cfg').perfectScrollbar('update');
+                    ogarcommando1();
+                }),
+                $('#hotkeys-cfg').perfectScrollbar(),
+            ZTX.menu && ZTX.menu.setMenuBg();
+        },
+        'getPressedKey': function (t) {
+            var e = '',
+                i = '';
+            switch (t['ctrlKey'] || 17 == t.keyCode ? e = 'CTRL' : (t.altKey || 18 == t.keyCode) && (e = 'ALT'), t.keyCode) {
+                case 9:
+                    i = 'TAB';
+                    break;
+                case 13:
+                    i = 'ENTER';
+                    break;
+                case 16:
+                    i = 'SHIFT';
+                    break;
+                case 17:
+                case 18:
+                    break;
+                case 27:
+                    i = 'ESC';
+                    break;
+                case 32:
+                    i = 'SPACE';
+                    break;
+                case 37:
+                    i = 'LEFT';
+                    break;
+                case 38:
+                    i = 'UP';
+                    break;
+                case 39:
+                    i = 'RIGHT';
+                    break;
+                case 40:
+                    i = 'DOWN';
+                    break;
+                case 46:
+                    i = 'DEL';
+                    break;
+                case 61:
+                case 187:
+                    i = '=';
+                    break;
+                case 192:
+                    i = 'TILDE';
+                    break;
+                default:
+                    i = String.fromCharCode(t.keyCode);
+            }
+            return '' !== e ? '' !== i ? e + '+' + i : e : i;
+        },
+        'deleteHotkey': function (t, e) {
+            delete ogario1Hotkeys[t];
+            $('#' + e).val('');
+        },
+        'setDefaultHotkey': function (t) {
+            var e = false;
+            return ogario11Hotkeys[t] && !ogario1Hotkeys.hasOwnProperty(ogario11Hotkeys[t].defaultKey) ? (e = ogario11Hotkeys[t].defaultKey, ogario1Hotkeys[e] = t, e) : e;
+        },
+        'setHotkey': function (t, e) {
+            if (e && (this.lastPressedKey !== t || this.lastKeyId !== e)) {
+                var i = $('#' + e).val();
+                if (this.deleteHotkey(i, e), 'DEL' !== t) {
+                    if (ogario1Hotkeys[t] && ogario1Hotkeys[t] !== e) {
+                        var o = ogario1Hotkeys[t],
+                            a = this.setDefaultHotkey(o);
+                        a ? (ogario1Hotkeys[a] = o, $('#' + o).val(a)) : this.deleteHotkey(t, o);
+                    }
+                    ogario1Hotkeys[t] = e,
+                        $('#' + e).val(t);
+                    if ('hk-chatMessage' === e) {
+                        ogario1Hotkeys['spec-messageKey'] = t
+                    }
+                    this.lastPressedKey = t;
+                    this.lastKeyId = e;
+                }
+            }
+        },
+        'init': function () {
+            this.loadHotkeys();
+            this.setHotkeysMenu();
+        }
+    };
